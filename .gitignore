@@ -8,4 +8,6 @@ web-ext.config.ts
 .dev/
 
 # Personal documents used for local testing. Never commit.
-docs/personal-info/
+docs/personal-info*/
+*profile*.json
+!package*.json
