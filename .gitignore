@@ -6,6 +6,7 @@ stats.html
 .env*
 web-ext.config.ts
 .dev/
+.playwright-mcp/
 
 # Personal documents used for local testing. Never commit.
 docs/personal-info*/
