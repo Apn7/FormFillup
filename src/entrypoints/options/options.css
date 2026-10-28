@@ -1,0 +1,35 @@
+.op { display: grid; grid-template-columns: 220px 1fr; min-height: 100vh; }
+.op-nav { background: var(--ff-surface); border-right: 1px solid var(--ff-border); padding: 16px 10px; position: sticky; top: 0; height: 100vh; }
+.op-nav h1 { font-size: 17px; padding: 0 8px 12px; }
+.op-nav button { display: block; width: 100%; text-align: left; padding: 8px 10px; border: 0; border-radius: 6px; background: transparent; color: var(--ff-text); font: inherit; cursor: pointer; }
+.op-nav button:hover { background: var(--ff-surface-2); }
+.op-nav button[aria-current='page'] { background: var(--ff-primary); color: var(--ff-primary-text); font-weight: 600; }
+.op-main { padding: 20px 28px 60px; max-width: 980px; width: 100%; }
+.op-main > header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 14px; gap: 12px; }
+.op-main h2 { font-size: 20px; }
+.op-saved { font-size: 13px; color: var(--ff-muted); min-width: 110px; text-align: right; }
+.op-saved.err { color: var(--ff-danger); }
+.op-row { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+.op-subhead { font-size: 13px; font-weight: 700; margin: 14px 0 8px; color: var(--ff-muted); text-transform: uppercase; letter-spacing: 0.04em; }
+.op-drop { border: 2px dashed var(--ff-border); border-radius: var(--ff-radius); padding: 26px; text-align: center; background: var(--ff-surface); }
+.op-drop.over { border-color: var(--ff-primary); background: var(--ff-good-bg); }
+.op-files { list-style: none; padding: 0; margin: 10px 0; }
+.op-files li { display: flex; align-items: center; gap: 10px; padding: 5px 0; border-bottom: 1px solid var(--ff-border); }
+.op-files li span:first-child { flex: 1; overflow-wrap: anywhere; }
+.op-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.op-table th, .op-table td { text-align: left; padding: 6px 8px; border-bottom: 1px solid var(--ff-border); vertical-align: top; overflow-wrap: anywhere; }
+.op-table th { color: var(--ff-muted); font-size: 12px; }
+.op-table .empty { color: var(--ff-muted); font-style: italic; }
+.op-presets { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 4px; }
+.op-kv { display: grid; grid-template-columns: 1fr 2fr auto; gap: 8px; align-items: end; margin-bottom: 8px; }
+.op-list-item { border: 1px solid var(--ff-border); border-radius: var(--ff-radius); padding: 12px; margin-bottom: 12px; background: var(--ff-bg); }
+.op-list-item > .ff-card-head { margin-bottom: 8px; }
+.op-list-item h4 { margin: 0; font-size: 14px; }
+@media (max-width: 760px) {
+  .op { grid-template-columns: 1fr; }
+  .op-nav { position: static; height: auto; display: flex; flex-wrap: wrap; gap: 4px; border-right: 0; border-bottom: 1px solid var(--ff-border); }
+  .op-nav h1 { width: 100%; }
+  .op-nav button { width: auto; }
+  .op-main { padding: 14px; }
+  .op-kv { grid-template-columns: 1fr; }
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Generic job application</title></head>
+<body>
+<h2>Online Application</h2>
+<form id="apply" action="/submit" method="post">
+  <input type="hidden" name="csrf" value="x">
+
+  <!-- label[for] -->
+  <label for="fullName">Full Name *</label>
+  <input id="fullName" name="fullName" type="text" required>
+
+  <!-- wrapping label -->
+  <label>Email Address <input type="email" name="contact_email"></label>
+
+  <!-- table row with nearby text -->
+  <table>
+    <tr><td>Father's Name</td><td><input type="text" name="f_name"></td></tr>
+    <tr><th>Mother's Name:</th><td><input type="text" name="m_name"></td></tr>
+  </table>
+
+  <!-- Bangla label -->
+  <div class="form-group">
+    <label for="fbn">পিতার নাম (বাংলায়)</label>
+    <input id="fbn" name="fbn" type="text">
+  </div>
+
+  <!-- aria-labelledby -->
+  <span id="dobLbl">Date of Birth</span>
+  <input type="text" name="birth" aria-labelledby="dobLbl" placeholder="DD/MM/YYYY">
+
+  <!-- autocomplete token wins over the meaningless name -->
+  <div class="form-group"><span>Contact</span> <input type="tel" name="field_17" autocomplete="tel"></div>
+
+  <div class="form-group">
+    <label for="cm">Confirm Mobile Number</label>
+    <input id="cm" name="cm" type="tel">
+  </div>
+
+  <div class="form-group">
+    <label for="gender">Gender</label>
+    <select id="gender" name="gender">
+      <option value="">-- choose --</option>
+      <option value="M">Male</option>
+      <option value="F">Female</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label for="rel">Religion</label>
+    <select id="rel" name="rel">
+      <option value="">Select</option>
+      <option value="mus">Muslim</option>
+      <option value="hin">Hindu</option>
+      <option value="chr">Christian</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <span>Marital Status</span>
+    <label><input type="radio" name="ms" value="unmarried"> Unmarried</label>
+    <label><input type="radio" name="ms" value="married"> Married</label>
+  </div>
+
+  <div class="form-group">
+    <label for="nid">National ID No.</label>
+    <input id="nid" name="nid" type="text">
+  </div>
+
+  <fieldset>
+    <legend>Present Address</legend>
+    <div class="form-group"><label for="pd">District</label>
+      <select id="pd" name="pd"><option value="">Select</option><option value="1">Chittagong</option><option value="2">Comilla</option><option value="3">Dhaka</option></select>
+    </div>
+    <div class="form-group"><label for="pz">Thana / Upazila</label><input id="pz" name="pz" type="text"></div>
+    <div class="form-group"><label for="ppc">Post Code</label><input id="ppc" name="ppc" type="text" maxlength="4"></div>
+  </fieldset>
+
+  <fieldset>
+    <legend>Permanent Address</legend>
+    <div class="form-group"><label for="perd">District</label>
+      <select id="perd" name="perd"><option value="">Select</option><option value="1">Chittagong</option><option value="2">Comilla</option><option value="3">Dhaka</option></select>
+    </div>
+    <div class="form-group"><label for="perv">Village / Road</label><textarea id="perv" name="perv"></textarea></div>
+  </fieldset>
+
+  <fieldset>
+    <legend>SSC / Equivalent</legend>
+    <div class="form-group"><label for="e1b">Board</label>
+      <select id="e1b" name="edu1_board"><option value="">Select</option><option value="d">Dhaka</option><option value="c">Chittagong</option></select>
+    </div>
+    <div class="form-group"><label for="e1r">Roll</label><input id="e1r" name="edu1_roll" type="text"></div>
+    <div class="form-group"><label for="e1g">GPA</label><input id="e1g" name="edu1_gpa" type="text"></div>
+    <div class="form-group"><label for="e1y">Passing Year</label>
+      <select id="e1y" name="edu1_year"><option value="">Select</option><option>2013</option><option>2014</option><option>2015</option></select>
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <legend>HSC / Equivalent</legend>
+    <div class="form-group"><label for="e2r">Roll</label><input id="e2r" name="edu2_roll" type="text"></div>
+    <div class="form-group"><label for="e2g">Result (GPA)</label><input id="e2g" name="edu2_gpa" type="text"></div>
+  </fieldset>
+
+  <div class="form-group"><label for="photo">Photo</label><input id="photo" name="photo" type="file"></div>
+  <div class="form-group"><label for="pw">Password</label><input id="pw" name="pw" type="password"></div>
+  <div class="form-group"><label for="cap">Enter captcha</label><input id="cap" name="captcha_code" type="text"></div>
+  <div class="form-group" style="display:none"><label for="hid">Hidden notes</label><input id="hid" name="hid" type="text"></div>
+  <label><input type="checkbox" name="terms"> I agree to the terms</label>
+  <button type="submit">Apply</button>
+</form>
+</body>
+</html>

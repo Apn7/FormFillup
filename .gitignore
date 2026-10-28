@@ -5,3 +5,7 @@ stats.html
 *.log
 .env*
 web-ext.config.ts
+.dev/
+
+# Personal documents used for local testing. Never commit.
+docs/personal-info/

@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Bangladesh Chemical Industries Corporation - BCIC | Powered By Teletalk</title>
+<!--
+  Offline fixture of http://bcic.teletalk.com.bd/bcic202606/application.php
+  (Assistant Programmer, post_code 140), captured live 2026-10-28 after the
+  page's document.ready ran (masters/experience sections disabled, GPA inputs hidden).
+  Trimmed: district (13), institute (12 + Other) and mas_subject option lists,
+  inline dependent data. Redacted: unique_id, CAPTCHA_ACTUAL, captcha image src.
+  The <script> at the end re-implements the page's handlers (main.js + inline
+  script) in vanilla JS with the same behaviour, for jsdom runScripts tests.
+-->
+<style>.hide{display:none}</style>
+</head>
+<body>
+<form id="applicationForm" method="post" action="preview.php" onsubmit="return validateForm(this);" class="form-inline was-validated custom-form" style="width: 100%;display: block;">
+<input type="hidden" name="post_code" value="140">
+<input type="hidden" name="post_name" value="Assistant Programmer">
+<input type="hidden" name="ad_ref_no" value="36.01.0000.126.11.401.26/554 , Dated: 11 October 2026">
+<input type="hidden" name="unique_id" value="REDACTED">
+<input type="hidden" name="alljobs_id" id="alljobs_id" value="">
+<input type="hidden" name="age_calculated">
+<input type="hidden" name="total_job_exp">
+<input type="hidden" name="total_job_exp_month">
+<input type="hidden" name="total_job_exp_day">
+<input type="hidden" name="ssc_hsc_data_mismatch" value="">
+<input type="hidden" name="is_allowed_result" value="">
+<input type="hidden" id="ssc_result_eq" name="ssc_result_eq">
+<input type="hidden" id="hsc_result_eq" name="hsc_result_eq">
+<input type="hidden" id="gra_result_eq" name="gra_result_eq">
+<input type="hidden" id="mas_result_eq" name="mas_result_eq">
+<input type="hidden" id="mph_result_eq" name="mph_result_eq">
+<input type="hidden" id="phd_result_eq" name="phd_result_eq">
+<input type="hidden" id="CAPTCHA_ACTUAL" name="CAPTCHA_ACTUAL" value="REDACTED">
+<input type="hidden" name="ssc_reg" value="">
+<input type="hidden" name="ssc_verified" value="">
+<input type="hidden" name="hsc_reg" value="">
+<input type="hidden" name="hsc_verified" value="">
+<fieldset style="border: 1px solid;">
+<legend class="h6">Application Form</legend>
+<div class="row">
+<div class="col-lg-12">
+<div class="container" style="padding: 0;border:none">
+<div class="form-group" style="line-height: 18px;padding-bottom: 8px;padding-top: 8px;margin-bottom: 6px;font-weight:bold;font-size: 13px;">
+<label class="col-sm-4 control-label">Name of the Post</label>
+<div class="col-sm-8">
+<span>Assistant Programmer <span class="bangla_font">[সহকারী প্রোগ্রামার ]</span></span>
+</div>
+</div>
+<fieldset style="border: 1px solid;">
+<legend class="h6">Basic Information</legend>
+<div class="form-group" style="position:relative">
+<label for="name" class="col-sm-4 control-label">Applicant's Name<span class="required">*</span></label>
+<div class="col-sm-8">
+<input type="text" name="name" id="name" maxlength="50" placeholder="" class="form-control textTransform short-width" onkeydown="return isValidEnglishNames(event)" required="" autofocus="">
+<span class="invalid-feedback">Please fill out this field.</span>
+</div>
+<span id="photo_view_wrapper" style="display:none;">
+<img src="" id="photo_view" style="width:100%;" alt="Photo Preview...">
+<span id="alljobs_id_view"></span>
+</span>
+</div>
+<div class="form-group">
+<label for="name_bn" class="col-sm-4 control-label bangla_font">আবেদনকারীর নাম (বাংলায়)<span class="required">*</span></label>
+<div class="col-sm-8">
+<input type="text" name="name_bn" id="name_bn" maxlength="50" placeholder="আবেদনকারীর নাম (বাংলায়)" class="form-control short-width" onchange="return bangla_only_string(this.value,this)" required="">
+<div class="invalid-feedback">Please fill out this field.</div>
+</div>
+</div>
+<div class="form-group">
+<label for="father" class="col-sm-4 control-label">Father's Name<span class="required">*</span></label>
+<div class="col-sm-8">
+<input type="text" name="father" id="father" maxlength="50" placeholder="" class="form-control textTransform short-width" onkeydown="return isValidEnglishNames(event)" required="">
+<div class="invalid-feedback">Please fill out this field.</div>
+</div>
+</div>
+<div class="form-group">
+<label for="father_bn" class="col-sm-4 control-label bangla_font">পিতার নাম (বাংলায়)<span class="required">*</span></label>
+<div class="col-sm-8">
+<input type="text" name="father_bn" id="father_bn" maxlength="50" placeholder="পিতার নাম (বাংলায়)" class="form-control" onchange="return bangla_only_string(this.value,this)" required="">
+<div class="invalid-feedback">Please fill out this field.</div>
+</div>
+</div>
+<div class="form-group">
+<label for="mother" class="col-sm-4 control-label">Mother's Name<span class="required">*</span></label>
+<div class="col-sm-8">
+<input type="text" name="mother" id="mother" maxlength="50" placeholder="" class="form-control textTransform" onkeydown="return isValidEnglishNames(event)" required="">
+<div class="invalid-feedback">Please fill out this field.</div>
+</div>
+</div>
+<div class="form-group">
+<label for="mother_bn" class="col-sm-4 control-label bangla_font">মাতার নাম (বাংলায়)<span class="required">*</span></label>
+<div class="col-sm-8">
+<input type="text" name="mother_bn" id="mother_bn" maxlength="50" placeholder="মাতার নাম (বাংলায়)" class="form-control" onchange="return bangla_only_string(this.value,this)" required="">
+<div class="invalid-feedback">Please fill out this field.</div>
+</div>
+</div>
+<div class="form-group">
+<label for="dob" class="col-sm-4 control-label">Date of Birth<span class="required">*</span></label>
+<div class="col-sm-8">
+<input type="date" name="dob" id="dob" min="1994-10-15" max="2008-10-15" onfocus="this.showPicker()" class="form-control" required="">
+<div class="invalid-feedback">Please fill out this field.</div>
+</div>
+</div>
+<div class="form-group">
+<label for="nationality" class="col-sm-4 control-label">Nationality<span class="required">*</span></label>
+<div class="col-sm-8">
+<select name="nationality" id="nationality" class="form-control" required="">
+<option value="" disabled="">Select</option>
+<option value="Bangladeshi" selected="">Bangladeshi</option>
+</select>
+</div>
+</div>
+<div class="form-group">
+<label for="religion" class="col-sm-4 control-label">Religion<span class="required">*</span></label>
+<div class="col-sm-8">
+<select name="religion" id="religion" class="form-control" required="">
+<option value="" disabled="" selected="">Select</option>
+<option value="1">Islam</option><option value="2">Hinduism</option><option value="3">Buddhism</option><option value="4">Christianity</option><option value="5">Other</option> </select>
+</div>
+</div>
+<div class="form-group">
+<label for="gender" class="control-label col-sm-4">Gender<span class="required">*</span></label>
+<div class="col-sm-8">
+<select name="gender" id="gender" class="form-control" required="">
+<option value="" disabled="" selected="">Select</option>
+<option value="Male">Male</option>
+<option value="Female">Female</option>
+<option value="Third Gender">Third Gender</option>
+</select>
+</div>
+</div>
+<div class="form-group">
+<label for="nid" class="control-label col-sm-4">National ID<span class="required">*</span></label>
+<div class="col selectParent">
+<select name="nid" id="nid" class="form-control" onchange="onChangeId(this,'nationalIdElm')" style="padding-right: 20px !important;" required="">
+<option value="" disabled="" selected="">Select</option>
+<option value="1">Yes</option>
+<option value="0">No</option>
+</select>
+</div>
+<div class="col hide" id="nationalIdElm">
+<label style="width: 100%;">
+<span class="col-7" style="margin: 0 10px;padding: 0 5px;text-align: right;">[National ID Number]</span>
+<input type="number" name="nid_no" id="nid_no" placeholder="" class="form-control col-5" style="margin-right: 20px;">
+</label>
+</div>
+</div>
+<div class="form-group">
+<label for="breg" class="control-label col-sm-4">Birth Registration<span class="required">*</span></label>
+<div class="col selectParent">
+<select name="breg" id="breg" class="form-control" onchange="onChangeId(this,'bregElm')" style="padding-right: 20px !important;" required="">
+<option value="" disabled="" selected="">Select</option>
+<option value="1">Yes</option>
+<option value="0">No</option>
+</select>
+</div>
+<div class="col hide" id="bregElm">
+<label style="width: 100%;">
+<span class="col-7" style="margin: 0 10px;padding: 0 5px;text-align: right;">[Birth Registration Number]</span>
+<input type="number" name="breg_no" id="breg_no" placeholder="" class="form-control col-5" style="margin-right: 20px;">
+</label>
+</div>
+</div>
+<div class="form-group">
+<label for="passport" class="control-label col-sm-4">Passport ID<span class="required">*</span></label>
+<div class="col selectParent">
+<select name="passport" id="passport" class="form-control" onchange="onChangeId(this,'passId')" style="padding-right: 20px !important;" required="">
+<option value="" disabled="" selected="">Select</option>
+<option value="1">Yes</option>
+<option value="0">No</option>
+</select>
+</div>
+<div class="col hide" id="passId">
+<label style="width: 100%;">
+<span class="col-7" style="margin: 0 10px;padding: 0 5px;text-align: right;">[Passport Number]</span>
+<input type="text" name="passport_no" id="passport_no" maxlength="15" placeholder="" class="form-control col-5 textTransform" style="margin-right: 20px;">
+</label>
+</div>
+</div>
+<div class="form-group">
+<label for="marital_status" class="control-label col-sm-4">Marital Status<span class="required">*</span></label>
+<div class="col selectParent">
+<select name="marital_status" id="marital_status" class="form-control" onchange="onChangeId(this,'maritalElm')" style="padding-right:0px !important;" required="">
+<option value="" disabled="" selected="">Select</option>
+<option value="Single">Single</option><option value="Married">Married</option><option value="Other">Other</option> </select>
+</div>
+<div class="col hide" id="maritalElm">
+<label style="width: 100%;">
+<span class="col-7" style="margin: 0 10px;padding: 0 5px;text-align: right;">[Spouse Name]</span>
+<input type="text" name="spouse_name" id="spouse_name" maxlength="50" placeholder="" class="form-control col-5 textTransform" onkeydown="return isValidEnglishNames(event)" style="margin-right: 20px;">
+</label>
+</div>
+</div>
+<div class="form-group">
+<label for="mobile" class="col-sm-4 control-label">Mobile Number<span class="required">*</span></label>
+<div class="col-sm-8">
+<input type="tel" name="mobile" id="mobile" maxlength="11" placeholder="" class="form-control" onkeydown="onMobileInput()" oncopy="return false" ondrag="return false" ondrop="return false" onpaste="return false" autocomplete="nope" required="">
+</div>
+</div>
+<div class="form-group">
+<label for="confirm_mobile" class="col-sm-4 control-label">Confirm Mobile Number<span class="required">*</span></label>
+<div class="col-sm-8">
+<input type="tel" name="confirm_mobile" id="confirm_mobile" maxlength="11" placeholder="" class="form-control" onkeydown="onMobileInput()" oncopy="return false" ondrag="return false" ondrop="return false" onpaste="return false" autocomplete="nope" required="">
+</div>
+</div>
+<div class="form-group">
+<label for="email" class="col-sm-4 control-label">Email<span class="required">*</span></label>
+<div class="col-sm-8">
+<input type="email" name="email" id="email" maxlength="50" placeholder="" class="form-control" required="">
+</div>
+</div>
+<div class="form-group">
+<label for="quota" class="col-sm-4 control-label">Quota<span class="required">*</span></label>
+<div class="col selectParent">
+<select name="quota" id="quota" class="form-control" onchange="onChangeQuota(this);onChangeId(this,'quotaDetailsElm')" required="">
+<option value="" selected="" disabled="">Select</option>
+<option value="1">Child of Freedom Fighter</option><option value="2">Child of Martyred Freedom Fighter</option><option value="3">Child of War Heroine (Birangana)</option><option value="4">Physically Challenged</option><option value="6">Ethnic Minority</option><option value="7">Third Gender</option><option value="8">Not Applicable</option> </select>
+</div>
+<div class="col hide" id="quotaDetailsElm">
+<label style="width: 100%;">
+<span class="col-7" style="margin: 0 10px;padding: 0 5px;text-align: right;line-height: 15px;" id="quotaText">[Freedom Fighter Details] i.e, Name, Certificate No, Date etc</span>
+<input type="text" name="quota_details" id="quota_details" maxlength="100" placeholder="" class="form-control col-5" style="margin-right: 20px;">
+</label>
+</div>
+</div>
+<div class="form-group">
+<label for="dep_status" class="col-sm-4 control-label">Departmental Status<span class="required">*</span></label>
+<div class="col-sm-8">
+<select name="dep_status" id="dep_status" class="form-control" required="">
+<option value="" selected="" disabled="">Select</option>
+<option value="1">Govt. Employee</option><option value="2">Semi Govt. Employee</option><option value="3">Autonomous</option><option value="4">Departmental Candidate</option><option value="5">Not Applicable</option> </select>
+</div>
+</div>
+</fieldset>
+<div class="row section">
+<div class="col-6" style="padding-right: 0;">
+<fieldset style="border:1px solid;margin-top:10px">
+<legend class="h6">Present Address <span class="bangla_font">(বর্তমান ঠিকানা)</span><span class="required">*</span></legend>
+<div class="form-group">
+<label for="present_careof" class="col-sm-4 control-label">Care Of<span class="required">*</span></label>
+<div class="col-sm-8">
+<input type="text" name="present_careof" id="present_careof" maxlength="50" placeholder="" class="form-control textTransform" required="">
+</div>
+</div>
+<div class="form-group">
+<label for="present_village" class="col-sm-4 control-label">Village/ Road/ House/ Flat<span class="required">*</span></label>
+<div class="col-sm-8">
+<textarea name="present_village" id="present_village" class="form-control textTransform" maxlength="150" onpaste="return false" required=""></textarea>
+</div>
+</div>
+<div class="form-group">
+<label for="present_district" class="col-sm-4 control-label">District<span class="required">*</span></label>
+<div class="col-sm-8">
+<select name="present_district" id="present_district" class="form-control" onchange="onChangeDistrict(this,'present_upazila')" required="">
+<option value="" selected="" disabled="">Select</option>
+<option value="29">Barishal</option><option value="10">Bogura</option><option value="13">Chapai Nawabganj</option><option value="60">Chattogram</option><option value="55">Cumilla</option><option value="40">Dhaka</option><option value="41">Gazipur</option><option value="23">Jashore</option><option value="25">Khulna</option><option value="34">Mymensingh</option><option value="43">Narayanganj</option><option value="14">Rajshahi</option><option value="51">Sylhet</option> </select>
+</div>
+</div>
+<div class="form-group">
+<label for="present_upazila" class="col-sm-4 control-label">Upazila/P.S.<span class="required">*</span></label>
+<div class="col-sm-8">
+<select name="present_upazila" id="present_upazila" class="form-control" onchange="onChangePresentUpazila()" required="">
+<option value="" selected="" disabled="">Select</option>
+</select>
+</div>
+</div>
+<div class="form-group">
+<label for="present_post" class="col-sm-4 control-label">Post Office<span class="required">*</span></label>
+<div class="col-sm-8">
+<input type="text" name="present_post" id="present_post" maxlength="50" placeholder="" class="form-control textTransform" required="">
+</div>
+</div>
+<div class="form-group">
+<label for="present_postcode" class="col-sm-4 control-label">Post Code<span class="required">*</span></label>
+<div class="col-sm-8">
+<input type="number" name="present_postcode" id="present_postcode" maxlength="4" min="1000" max="9999" placeholder="" class="form-control" required="">
+</div>
+</div>
+</fieldset>
+</div>
+<div class="col-6 perm_add" style="position:relative;padding-left:0">
+<fieldset style="border:1px solid;margin-top:10px">
+<legend class="h6">Permanent Address <span class="bangla_font">(স্থায়ী ঠিকানা)</span><span class="required">*</span></legend>
+<div class="same_as_present" style="position: absolute;top: -15px;left: 0;">
+<span class="custom_checkbox_address">
+<input type="checkbox" name="same_as_present" id="same_as_present" class="form-check-input" style="width:12px" value="1" onclick="onOffSameAsBtn(this)">
+<label class="form-check-label" for="same_as_present" style="font-size: 11px !important;">Same as Present Address</label>
+</span>
+</div>
+<div class="form-group">
+<label for="permanent_careof" class="col-sm-4 control-label">Care Of<span class="required">*</span></label>
+<div class="col-sm-8">
+<input type="text" name="permanent_careof" id="permanent_careof" maxlength="50" placeholder="" class="form-control textTransform" required="">
+</div>
+</div>
+<div class="form-group">
+<label for="permanent_village" class="col-sm-4 control-label">Village/ Road/ House/ Flat<span class="required">*</span></label>
+<div class="col-sm-8">
+<textarea name="permanent_village" id="permanent_village" class="form-control textTransform" maxlength="150" onpaste="return false" required=""></textarea>
+</div>
+</div>
+<div class="form-group">
+<label for="permanent_district" class="col-sm-4 control-label">District<span class="required">*</span></label>
+<div class="col-sm-8">
+<select name="permanent_district" id="permanent_district" class="form-control" onchange="onChangeDistrict(this,'permanent_upazila')" required="">
+<option value="" selected="" disabled="">Select</option>
+<option value="29">Barishal</option><option value="10">Bogura</option><option value="13">Chapai Nawabganj</option><option value="60">Chattogram</option><option value="55">Cumilla</option><option value="40">Dhaka</option><option value="41">Gazipur</option><option value="23">Jashore</option><option value="25">Khulna</option><option value="34">Mymensingh</option><option value="43">Narayanganj</option><option value="14">Rajshahi</option><option value="51">Sylhet</option> </select>
+</div>
+</div>
+<div class="form-group">
+<label for="permanent_upazila" class="col-sm-4 control-label">Upazila/P.S.<span class="required">*</span></label>
+<div class="col-sm-8">
+<select name="permanent_upazila" id="permanent_upazila" class="form-control" required="">
+<option value="" selected="" disabled="">Select</option>
+</select>
+</div>
+</div>
+<div class="form-group">
+<label for="permanent_post" class="col-sm-4 control-label">Post Office<span class="required">*</span></label>
+<div class="col-sm-8">
+<input type="text" name="permanent_post" id="permanent_post" maxlength="50" placeholder="" class="form-control textTransform" required="">
+</div>
+</div>
+<div class="form-group">
+<label for="permanent_postcode" class="col-sm-4 control-label">Post Code<span class="required">*</span></label>
+<div class="col-sm-8">
+<input type="number" name="permanent_postcode" id="permanent_postcode" maxlength="4" min="1000" max="9999" placeholder="" class="form-control" required="">
+</div>
+</div>
+</fieldset>
+</div>
+</div>
+<div id="sscSection" class="row section">
+<div class="col-lg-12">
+<fieldset style="border:1px solid;">
+<legend class="h6">SSC/Equivalent Level</legend>
+<div class="row">
+<div class="col-6">
+<div class="form-group">
+<label for="ssc_exam" class="col-sm-4 control-label">Examination<span class="required">*</span></label>
+<div class="col-sm-8">
+<select name="ssc_exam" id="ssc_exam" class="form-control" onchange="onChangeExamTypeSSC(this)" required="">
+<option value="" selected="" disabled="">Select</option>
+<option value="1">S.S.C</option><option value="2">Dakhil</option><option value="3">S.S.C Vocational</option><option value="4">O Level/Cambridge</option><option value="5">S.S.C Equivalent</option><option value="6">Dakhil Vocational</option> </select>
+</div>
+</div>
+<div class="form-group">
+<label for="ssc_roll" class="col-sm-4 control-label">Roll No<span class="required">*</span></label>
+<div class="col-sm-8">
+<input type="number" name="ssc_roll" id="ssc_roll" maxlength="20" placeholder="" class="form-control" required="">
+</div>
+</div>
+<div class="form-group">
+<label for="ssc_group" class="col-sm-4 control-label">Group/Subject<span class="required">*</span></label>
+<div class="col-sm-8">
+<select name="ssc_group" id="ssc_group" class="form-control" onchange="onChangeSubGrp(this)" required="">
+<option value="" selected="" disabled="">Select</option>
+</select>
+<input type="text" name="ssc_group_other" id="ssc_group_other" maxlength="50" style="padding-right: 10px !important; display: none;" class="other_value form-control">
+</div>
+</div>
+</div>
+<div class="col-6">
+<div class="form-group">
+<label for="ssc_board" class="col-sm-4 control-label">Board<span class="required">*</span></label>
+<div class="col-sm-8">
+<select name="ssc_board" id="ssc_board" class="form-control" onchange="onChangeBoard(this)" required="">
+<option value="" selected="" disabled="">Select</option>
+<option value="11">Barishal</option><option value="12">Chattogram</option><option value="13">Cumilla</option><option value="14">Dhaka</option><option value="15">Dinajpur</option><option value="16">Jashore</option><option value="17">Madrasah</option><option value="18">Mymensingh</option><option value="19">Rajshahi</option><option value="20">Sylhet</option><option value="21">Open University</option><option value="22">Edexcel International</option><option value="23">Cambridge International - IGCE</option><option value="24">Pharmacy Council of Bangladesh</option><option value="25">The State Medical Faculty of Bangladesh</option><option value="26">Bangladesh Technical Education Board (BTEB)</option><option value="99">Other</option> </select>
+<input type="text" name="ssc_board_other" id="ssc_board_other" maxlength="50" style="padding-right: 10px !important; display: none;" class="other_value form-control">
+</div>
+</div>
+<div class="form-group">
+<label for="ssc_result_type" class="col-sm-4 control-label">Result<span class="required">*</span></label>
+<div class="col-sm-8">
+<select name="ssc_result_type" id="ssc_result_type" class="form-control" onchange="onChangeResult(this)" required="">
+<option value="" selected="" disabled="">Select</option>
+<option value="4">GPA(out of 4)</option><option value="5">GPA(out of 5)</option> </select>
+<input type="number" name="ssc_result" id="ssc_result" min="1.0" max="5.0" step="0.01" style="padding-right: 10px !important; display: none;" class="gpaVal form-control">
+</div>
+</div>
+<div class="form-group">
+<label for="ssc_year" class="col-sm-4 control-label">Passing Year<span class="required">*</span></label>
+<div class="col-sm-8">
+<select name="ssc_year" id="ssc_year" class="form-control" required="">
+<option value="" selected="" disabled="">Select</option>
+<option value="2004">2004</option><option value="2005">2005</option><option value="2006">2006</option><option value="2007">2007</option><option value="2008">2008</option><option value="2009">2009</option><option value="2010">2010</option><option value="2011">2011</option><option value="2012">2012</option><option value="2013">2013</option><option value="2014">2014</option><option value="2015">2015</option><option value="2016">2016</option><option value="2017">2017</option><option value="2018">2018</option><option value="2019">2019</option><option value="2020">2020</option><option value="2021">2021</option><option value="2022">2022</option><option value="2023">2023</option><option value="2024">2024</option><option value="2025">2025</option><option value="2026">2026</option> </select>
+</div>
+</div>
+</div>
+</div>
+</fieldset>
+</div>
+</div>
+<div id="hscSection" class="row section">
+<div class="col-lg-12">
+<fieldset style="border:1px solid;">
+<legend class="h6">HSC/Equivalent Level</legend>
+<div class="row">
+<div class="col-6">
+<div class="form-group">
+<label for="hsc_exam" class="col-sm-4 control-label">Examination<span class="required">*</span></label>
+<div class="col-sm-8">
+<select name="hsc_exam" id="hsc_exam" class="form-control" onchange="onChangeExamTypeHSC(this)" required="">
+<option value="" selected="" disabled="">Select</option>
+<option value="1">H.S.C</option><option value="2">Alim</option><option value="3">Business Management</option><option value="4">Diploma-in-Engineering</option><option value="5">A Level/Sr. Cambridge</option><option value="6">H.S.C Equivalent</option><option value="7">Diploma in Medical Technology</option><option value="8">H.S.C Vocational</option><option value="9">H.S.C (BM)</option><option value="10">Diploma in Pharmacy</option> </select>
+</div>
+</div>
+<div class="form-group">
+<label for="hsc_roll" class="col-sm-4 control-label">Roll No<span class="required">*</span></label>
+<div class="col-sm-8">
+<input type="number" name="hsc_roll" id="hsc_roll" maxlength="20" placeholder="" class="form-control" required="">
+</div>
+</div>
+<div class="form-group">
+<label for="hsc_group" class="col-sm-4 control-label">Group/Subject<span class="required">*</span></label>
+<div class="col-sm-8">
+<select name="hsc_group" id="hsc_group" class="form-control" onchange="onChangeSubGrp(this)" required="">
+<option value="" selected="" disabled="">Select</option>
+</select>
+<input type="text" name="hsc_group_other" id="hsc_group_other" maxlength="50" style="padding-right: 10px !important; display: none;" class="other_value form-control">
+</div>
+</div>
+</div>
+<div class="col-6">
+<div class="form-group">
+<label for="hsc_board" class="col-sm-4 control-label">Board<span class="required">*</span></label>
+<div class="col-sm-8">
+<select name="hsc_board" id="hsc_board" class="form-control" onchange="onChangeBoard(this)" required="">
+<option value="" selected="" disabled="">Select</option>
+<option value="10">DIBS (Dhaka)</option><option value="11">Barishal</option><option value="12">Chattogram</option><option value="13">Cumilla</option><option value="14">Dhaka</option><option value="15">Dinajpur</option><option value="16">Jashore</option><option value="17">Madrasah</option><option value="18">Mymensingh</option><option value="19">Rajshahi</option><option value="20">Sylhet</option><option value="21">Open University</option><option value="22">Edexcel International</option><option value="23">Cambridge International - IGCE</option><option value="24">Pharmacy Council of Bangladesh</option><option value="25">The State Medical Faculty of Bangladesh</option><option value="26">Bangladesh Technical Education Board (BTEB)</option><option value="99">Other</option> </select>
+<input type="text" name="hsc_board_other" id="hsc_board_other" maxlength="50" style="padding-right: 10px !important; display: none;" class="other_value form-control">
+</div>
+</div>
+<div class="form-group">
+<label for="hsc_result_type" class="col-sm-4 control-label">Result<span class="required">*</span></label>
+<div class="col-sm-8">
+<select name="hsc_result_type" id="hsc_result_type" class="form-control" onchange="onChangeResult(this)" required="">
+<option value="" selected="" disabled="">Select</option>
+<option value="4">GPA(out of 4)</option><option value="5">GPA(out of 5)</option> </select>
+<input type="number" name="hsc_result" id="hsc_result" min="1.0" max="5.0" step="0.01" style="padding-right: 10px !important; display: none;" class="gpaVal form-control">
+</div>
+</div>
+<div class="form-group">
+<label for="hsc_year" class="col-sm-4 control-label">Passing Year<span class="required">*</span></label>
+<div class="col-sm-8">
+<select name="hsc_year" id="hsc_year" class="form-control" required="">
+<option value="" selected="" disabled="">Select</option>
+<option value="2004">2004</option><option value="2005">2005</option><option value="2006">2006</option><option value="2007">2007</option><option value="2008">2008</option><option value="2009">2009</option><option value="2010">2010</option><option value="2011">2011</option><option value="2012">2012</option><option value="2013">2013</option><option value="2014">2014</option><option value="2015">2015</option><option value="2016">2016</option><option value="2017">2017</option><option value="2018">2018</option><option value="2019">2019</option><option value="2020">2020</option><option value="2021">2021</option><option value="2022">2022</option><option value="2023">2023</option><option value="2024">2024</option><option value="2025">2025</option><option value="2026">2026</option> </select>
+</div>
+</div>
+</div>
+</div>
+</fieldset>
+</div>
+</div>
+<div id="graSection" class="row section">
+<div class="col-lg-12">
+<fieldset style="border:1px solid;">
+<legend class="h6">Graduation/Equivalent Level</legend>
+<div class="row">
+<div class="col-6">
+<div class="form-group">
+<label for="gra_exam" class="col-sm-4 control-label">Examination<span class="required">*</span></label>
+<div class="col-sm-8">
+<select name="gra_exam" id="gra_exam" class="form-control" onchange="onChangeExamTypeGRA(this)" required="">
+<option value="" selected="" disabled="">Select</option>
+<option value="1">B.Sc Engineering</option><option value="4">Honors</option><option value="8">Graduation Equivalent</option> </select>
+</div>
+</div>
+<div class="form-group">
+<label for="gra_institute" class="col-sm-4 control-label">University/Inst.<span class="required">*</span></label>
+<div class="col-sm-8">
+<select name="gra_institute" id="gra_institute" class="form-control" onchange="onChangeSubUni(this)" required="">
+<option value="" selected="" disabled="">Select</option>
+<option value="131">Bangladesh University of Engineering &amp; Technology</option><option value="141">BRAC University</option><option value="152">Chittagong University of Engineering &amp; Technology</option><option value="211">Jahangirnagar University</option><option value="223">Khulna University of Engineering and Technology</option><option value="240">National University</option><option value="248">North South University</option><option value="274">Rajshahi University of Engineering &amp; Technology</option><option value="290">Shahjalal University of Science &amp; Technology</option><option value="324">University of Chittagong</option><option value="327">University of Dhaka</option><option value="331">University of Rajshahi</option><option value="999">Other</option> </select>
+<input type="text" name="gra_institute_other" id="gra_institute_other" maxlength="100" style="padding-right: 10px !important; display: none;" class="other_value form-control">
+</div>
+</div>
+<div class="form-group">
+<label for="gra_year" class="col-sm-4 control-label">Passing Year<span class="required">*</span></label>
+<div class="col-sm-8">
+<select name="gra_year" id="gra_year" class="form-control" required="">
+<option value="" selected="" disabled="">Select</option>
+<option value="2004">2004</option><option value="2005">2005</option><option value="2006">2006</option><option value="2007">2007</option><option value="2008">2008</option><option value="2009">2009</option><option value="2010">2010</option><option value="2011">2011</option><option value="2012">2012</option><option value="2013">2013</option><option value="2014">2014</option><option value="2015">2015</option><option value="2016">2016</option><option value="2017">2017</option><option value="2018">2018</option><option value="2019">2019</option><option value="2020">2020</option><option value="2021">2021</option><option value="2022">2022</option><option value="2023">2023</option><option value="2024">2024</option><option value="2025">2025</option><option value="2026">2026</option> </select>
+</div>
+</div>
+</div>
+<div class="col-6">
+<div class="form-group">
+<label for="gra_subject" class="col-sm-4 control-label">Subject/Degree<span class="required">*</span></label>
+<div class="col-sm-8">
+<select name="gra_subject" id="gra_subject" class="form-control" onchange="onChangeSubUni(this)" required="">
+<option value="" selected="" disabled="">Select</option>
+</select>
+<input type="text" name="gra_subject_other" id="gra_subject_other" maxlength="100" style="padding-right: 10px !important; display: none;" class="other_value form-control">
+</div>
+</div>
+<div class="form-group">
+<label for="gra_result_type" class="col-sm-4 control-label">Result<span class="required">*</span></label>
+<div class="col-sm-8">
+<select name="gra_result_type" id="gra_result_type" class="form-control" onchange="onChangeResult(this)" required="">
+<option value="" selected="" disabled="">Select</option>
+<option value="4">CGPA(out of 4)</option><option value="5">CGPA(out of 5)</option> </select>
+<input type="number" name="gra_result" id="gra_result" min="1.0" max="5.0" step="0.01" style="padding-right: 10px !important; display: none;" class="gpaVal form-control">
+</div>
+</div>
+<div class="form-group">
+<label for="gra_duration" class="col-sm-4 control-label" style="padding: 0 1px">Course Duration<span class="required">*</span></label>
+<div class="col-sm-8">
+<select name="gra_duration" id="gra_duration" class="form-control" required="">
+<option value="" selected="" disabled="">Select</option>
+<option value="03">03 Years</option><option value="04">04 Years</option><option value="05">05 Years</option> </select>
+</div>
+</div>
+</div>
+</div>
+</fieldset>
+</div>
+</div>
+<div id="masSection" class="row section">
+<div class="col-lg-12">
+<fieldset style="border:1px solid;">
+<legend class="h6" style="opacity: 0.5;">Masters/Equivalent Level</legend>
+<span class="custom_checkbox">
+<input type="checkbox" name="if_applicable_mas" id="if_applicable_mas" class="form-check-input if_applicable" value="1" onclick="ifApplicable(this)">
+<label class="form-check-label" for="if_applicable_mas">If Applicable</label>
+</span>
+<div class="row">
+<div class="col-6">
+<div class="form-group">
+<label for="mas_exam" class="col-sm-4 control-label">Examination<span class="required">*</span></label>
+<div class="col-sm-8">
+<select name="mas_exam" id="mas_exam" class="form-control" disabled="disabled">
+<option value="" selected="" disabled="">Select</option>
+<option value="1">M.A</option><option value="2">M.S.S</option><option value="3">M.Sc</option><option value="4">M.Com</option><option value="5">M.B.A</option><option value="6">L.L.M</option><option value="8">Kamil</option><option value="10">Masters Equivalent</option> </select>
+</div>
+</div>
+<div class="form-group">
+<label for="mas_institute" class="col-sm-4 control-label">University/Inst.<span class="required">*</span></label>
+<div class="col-sm-8">
+<select name="mas_institute" id="mas_institute" class="form-control" onchange="onChangeSubUni(this)" disabled="disabled">
+<option value="" selected="" disabled="">Select</option>
+<option value="131">Bangladesh University of Engineering &amp; Technology</option><option value="141">BRAC University</option><option value="152">Chittagong University of Engineering &amp; Technology</option><option value="211">Jahangirnagar University</option><option value="223">Khulna University of Engineering and Technology</option><option value="240">National University</option><option value="248">North South University</option><option value="274">Rajshahi University of Engineering &amp; Technology</option><option value="290">Shahjalal University of Science &amp; Technology</option><option value="324">University of Chittagong</option><option value="327">University of Dhaka</option><option value="331">University of Rajshahi</option><option value="999">Other</option> </select>
+<input type="text" name="mas_institute_other" id="mas_institute_other" maxlength="100" style="padding-right: 10px !important; display: none;" class="other_value form-control" disabled="disabled">
+</div>
+</div>
+<div class="form-group">
+<label for="mas_year" class="col-sm-4 control-label">Passing Year<span class="required">*</span></label>
+<div class="col-sm-8">
+<select name="mas_year" id="mas_year" class="form-control" disabled="disabled">
+<option value="" selected="" disabled="">Select</option>
+<option value="2004">2004</option><option value="2005">2005</option><option value="2006">2006</option><option value="2007">2007</option><option value="2008">2008</option><option value="2009">2009</option><option value="2010">2010</option><option value="2011">2011</option><option value="2012">2012</option><option value="2013">2013</option><option value="2014">2014</option><option value="2015">2015</option><option value="2016">2016</option><option value="2017">2017</option><option value="2018">2018</option><option value="2019">2019</option><option value="2020">2020</option><option value="2021">2021</option><option value="2022">2022</option><option value="2023">2023</option><option value="2024">2024</option><option value="2025">2025</option><option value="2026">2026</option> </select>
+</div>
+</div>
+</div>
+<div class="col-6">
+<div class="form-group">
+<label for="mas_subject" class="col-sm-4 control-label">Subject/Degree<span class="required">*</span></label>
+<div class="col-sm-8">
+<select name="mas_subject" id="mas_subject" class="form-control" onchange="onChangeSubUni(this)" disabled="disabled">
+<option value="" selected="" disabled="">Select</option>
+<option value="101">Accounting</option><option value="268">Accounting and Information Systems</option><option value="328">Aeronautical Engineering</option><option value="226">Agr.Co-operative &amp; Marketing</option><option value="201">Agriculture</option><option value="202">Agriculture Chemistry</option><option value="203">Agriculture Co-operatives</option><option value="204">Agriculture Economics</option><option value="205">Agriculture Engineering</option><option value="221">Agriculture Extension</option><option value="206">Agriculture Finance</option><option value="207">Agriculture Marketing</option><option value="114">Computer Science</option><option value="185">Computer Science &amp; Engineering</option><option value="186">Computer Science &amp; Information Technology</option><option value="999">Other</option> </select>
+<input type="text" name="mas_subject_other" id="mas_subject_other" maxlength="100" style="padding-right: 10px !important; display: none;" class="other_value form-control" disabled="disabled">
+</div>
+</div>
+<div class="form-group">
+<label for="mas_result_type" class="col-sm-4 control-label">Result<span class="required">*</span></label>
+<div class="col-sm-8">
+<select name="mas_result_type" id="mas_result_type" class="form-control" onchange="onChangeResult(this)" disabled="disabled">
+<option value="" selected="" disabled="">Select</option>
+<option value="4">CGPA(out of 4)</option><option value="5">CGPA(out of 5)</option> </select>
+<input type="number" name="mas_result" id="mas_result" min="1.0" max="5.0" step="0.01" style="padding-right: 10px !important; display: none;" class="gpaVal form-control" disabled="disabled">
+</div>
+</div>
+<div class="form-group">
+<label for="mas_duration" class="col-sm-4 control-label" style="padding: 0 1px">Course Duration<span class="required">*</span></label>
+<div class="col-sm-8">
+<select name="mas_duration" id="mas_duration" class="form-control" disabled="disabled">
+<option value="" selected="" disabled="">Select</option>
+<option value="1.5">1.5 Years</option><option value="01">01 Year</option><option value="2.5">2.5 Years</option><option value="02">02 Years</option><option value="03+">3+ Years</option><option value="03">03 Years</option> </select>
+</div>
+</div>
+</div>
+</div>
+</fieldset>
+</div>
+</div>
+<div id="expSection" style="border: 2px groove;margin: 15px 0; padding-bottom: 20px;border-radius:5px">
+<div class="row section jobExpTemplate" data-index="0">
+<div class="col-lg-12">
+<fieldset style="border:1px solid;">
+<legend class="h6" style="padding: 2px 10px; opacity: 0.5;">Job Experiences
+<button type="button" id="addNewJob" class="btn btn-primary" onclick="addNewExp()" style="font-size: 11px;padding: 3px;margin-left: 10px;height: 22px;line-height: 14px;" value="" disabled="disabled">
+ADD MORE
+</button>
+</legend>
+<span class="custom_checkbox">
+<input type="checkbox" name="if_applicable_exp" id="if_applicable_exp" class="form-check-input if_applicable_exp" value="1" onclick="ifApplicableExp(this)">
+<label class="form-check-label" for="if_applicable_exp">If Applicable</label>
+</span>
+<div class="row">
+<span class="job_sl" style="top: 34px; opacity: 0.5;">1</span>
+<input type="hidden" name="job[0][job_length]" class="job_length" value="" disabled="disabled">
+<div class="col-6">
+<div class="form-group">
+<label for="employment_type" class="col-sm-4 control-label">Employed on<span class="required">*</span></label>
+<div class="col-sm-8">
+<select name="job[0][employment_type]" id="employment_type" class="form-control employment_type" disabled="disabled">
+<option value="" selected="" disabled="">Select</option>
+<option value="1">Regular Basis Under Revenue Budget</option><option value="2">Ad-hoc Basis Under Revenue Budget</option><option value="3">Temporary Basis Under Revenue Budget</option><option value="4">Work Charged Basis Under Revenue Budget</option><option value="5">Temporary Basis Under Development Project</option><option value="6">Work Charged Basis Under Development Project</option><option value="7">Autonomous/Semi Autonomous Organization</option><option value="8">Private Organization</option><option value="9">Business/Self Employed</option> </select>
+</div>
+</div>
+<div class="form-group">
+<label for="designation" class="col-sm-4 control-label">Designation/Post<span class="required">*</span></label>
+<div class="col-sm-8">
+<input type="text" name="job[0][designation]" id="designation" maxlength="50" placeholder="" class="form-control designation" disabled="disabled">
+</div>
+</div>
+<div class="form-group">
+<label for="job_start_date" class="col-sm-4 control-label" style="line-height: 14px;margin-top: -22px;">Length of Service<span class="required">*</span></label>
+<div class="col-sm-4">
+<input type="date" name="job[0][job_start_date]" id="job_start_date" max="2026-10-28" min="1994-10-15" onfocus="this.showPicker()" style="font-size: 11px !important;padding: 10px 3px !important" class="form-control job_start_date" disabled="disabled">
+<div class="invalid-feedback">Please fill out this field.</div>
+<span style="height: 20px;display:block"></span>
+</div>
+<div class="col-sm-4 end_date_wraper">
+<label for="job_end_date" class="control-label" style="position: absolute;left: -5px;top: 3px;">to</label>
+<input type="date" name="job[0][job_end_date]" id="job_end_date" max="2026-10-28" min="1994-10-15" onfocus="this.showPicker()" style="font-size: 11px !important;padding:10px 3px !important" class="form-control job_end_date" disabled="disabled">
+<div class="invalid-feedback">Please fill out this field.</div>
+<span class="custom_checkbox curr_work" style="display: flex;padding-left:0;position:unset">
+<input type="checkbox" name="job[0][currently_working]" id="currently_working" style="margin-top: -3px !important;height: 12px;width: 12px;" class="form-check-input currently_working" value="" onclick="currentlyWorking(this)" disabled="disabled">
+<label class="form-check-label" for="currently_working" style="display: block;line-height: 8px;font-size: 9px !important;font-weight: bold;">CurrentlyWorking</label>
+</span>
+</div>
+</div>
+</div>
+<div class="col-6">
+<div class="form-group">
+<label for="organization" class="col-sm-4 control-label">Organization<span class="required">*</span></label>
+<div class="col-sm-8">
+<input type="text" name="job[0][organization]" id="organization" maxlength="100" placeholder="" class="form-control organization" disabled="disabled">
+</div>
+</div>
+<div class="form-group">
+<label for="office_address" class="col-sm-4 control-label">Address<span class="required">*</span></label>
+<div class="col-sm-8">
+<input type="text" name="job[0][office_address]" id="office_address" maxlength="100" placeholder="" class="form-control office_address" disabled="disabled">
+</div>
+</div>
+</div>
+<div class="col-lg-12">
+<div class="form-group">
+<label for="job_description" class="col-sm-2 control-label">Job Description<span class="required">*</span></label>
+<div class="col-sm-10" style="padding-left:10px">
+<textarea name="job[0][job_description]" id="job_description" maxlength="300" class="form-control job_description" onkeyup="onKeyupJobDesc(this)" oninput="onKeyupJobDesc(this)" onchange="jobDescChange(this);" onpaste="return false" disabled="disabled"></textarea>
+<span class="charLength">300</span>
+</div>
+</div>
+</div>
+</div>
+</fieldset>
+</div>
+</div>
+</div>
+<div class="col-md-12" style="margin-top: 30px;">
+<fieldset style="border: 1px solid;margin-left: -15px;margin-right: -15px;">
+<legend class="h6">Verification Code</legend>
+<div class="row">
+<div class="col-md-12">
+<div class="form-group" style="padding: 10px 0;">
+<label for="captcha" class="col-sm-7 control-label" style="display: inline-flex;justify-content: left;font-size: 12px;">
+<strong>Enter the Verification Code:<span class="required">*</span></strong>
+<label class="captcha_code" style="display:block; margin-left: 40px;text-align: center;">
+<img src="" id="captcha_image" style="height: 40px">
+<label style="display: block;">Refresh? <a href="javascript: refreshCaptcha();"> click here</a></label>
+</label>
+</label>
+<div class="col">
+<input type="text" name="captcha" id="captcha" class="form-control" required="">
+</div>
+</div>
+</div>
+</div>
+</fieldset>
+</div>
+<div class="form-group">
+<div class="col-sm-8 col-sm-offset-3">
+</div>
+</div>
+<div class="col-md-12" style="display: inline-flex;margin: 15px 5px;">
+<input type="checkbox" name="agree" id="agree" class="form-check-input" style="margin-top: 1px;width: 16px;height: 16px;" required="">
+<label class="form-check-label" for="agree" style="height: auto !important;background: unset;padding: 2px 5px;font-style: italic;color:#333;text-align: justify;">I declare that the information provided above are correct, true and complete to the best of my knowledge and belief. And I would like to go to the next step.</label>
+<img src="" id="signature_view" style="display:none; position: absolute;left: 15px; width: 150px; bottom: -45px; border: 1px solid #28a745; padding: 4px; border-radius: 2px; background-color: rgb(255, 255, 255);z-index: 1;">
+</div>
+<div style="padding: 5px 13px;">
+<button type="submit" id="submit" name="submitApplication" data-submit="...Sending" class="btn btn-info btn-block">Submit</button>
+</div>
+</div>
+</div>
+</div>
+</fieldset>
+</form>
+<script>
+// ---------------------------------------------------------------------------
+// Inline page data (trimmed; same shapes and codes as the live page)
+// ---------------------------------------------------------------------------
+var postInfo = { post_code: '140', post_name: 'Assistant Programmer', quota_active: 1, job_exp_active: 1, job_exp_required: 0 };
+var today = '2026-10-28';
+var upazilaThanaList = [
+  ['40', '299', 'Adabor'], ['40', '300', 'Airport'], ['40', '301', 'Badda'], ['40', '302', 'Banani'], ['40', '311', 'Dhanmondi'],
+  ['40', '314', 'Gulshan'], ['40', '325', 'Kotwali'], ['40', '327', 'Mirpur Model'], ['40', '341', 'Savar'], ['40', '346', 'Tejgaon'],
+  ['60', '496', 'Anowara'], ['60', '497', 'Bakalia'], ['60', '510', 'Kotwali'], ['60', '514', 'Panchlaish'],
+  ['55', '452', 'Barura'], ['55', '455', 'Chandina'], ['55', '457', 'Cumilla Sadar'], ['55', '458', 'Cumilla Sadar South'],
+  ['29', '205', 'Babuganj'], ['29', '208', 'Barishal Sadar (Kotwali)'],
+  ['23', '155', 'Abhay Nagar'], ['23', '160', 'Kotwali'],
+  ['10', '65', 'Adamdighi'], ['10', '66', 'Bogura Sadar'],
+  ['13', '97', 'Nawabganj Sadar'], ['13', '98', 'Shibganj'],
+  ['41', '354', 'Gazipur Sadar'], ['41', '359', 'Tongi'],
+  ['25', '177', 'Khulna Sadar'], ['34', '251', 'Mymensingh Sadar'], ['43', '368', 'Narayanganj Sadar'],
+  ['14', '101', 'Boalia (Sadar)'], ['51', '426', 'Sylhet Sadar']
+].map(function (x) { return { dist_code: x[0], thana_code: x[1], thana: x[2] }; });
+var subjectGroupSSC = [
+  ['3', 'Business Studies', 'G'], ['4', 'General', 'G'], ['2', 'Humanities', 'G'], ['1', 'Science', 'G'], ['99', 'Other', 'Z'],
+  ['11', 'Agro-Based Food', 'V'], ['12', 'Architectural Drafting with CAD', 'V'], ['13', 'Automotive', 'V']
+].map(function (x) { return { code: x[0], value: x[1], type: x[2] }; });
+var subjectGroupHSC = [
+  ['3', 'Business Studies', 'G'], ['4', 'General', 'G'], ['2', 'Humanities', 'G'], ['1', 'Science', 'G'], ['99', 'Other', 'Z'],
+  ['13', 'Architecture and Interior Design Technology', 'T'], ['12', 'Architecture Technology', 'T'], ['15', 'Automobile Technology', 'T'],
+  ['93', 'Dental', 'M'], ['92', 'Laboratory', 'M'], ['96', 'Pharmacy', 'M'],
+  ['71', 'Agro Machinery', 'V'], ['72', 'Automobile', 'V'], ['73', 'Building Construction and Maintenance', 'V']
+].map(function (x) { return { code: x[0], value: x[1], type: x[2] }; });
+var subjectDegreeListGRA = [
+  ['324', 'Computer Science', 'E'], ['394', 'Computer Science & Engineering', 'E'], ['306', 'Electrical & Electronics Engineering', 'E'],
+  ['396', 'Information and Communication Technology', 'E'], ['114', 'Computer Science', 'G'], ['185', 'Computer Science & Engineering', 'G'],
+  ['132', 'Information and Communication Technology', 'G']
+].map(function (x) { return { code: x[0], value: x[1], type: x[2] }; });
+
+// ---------------------------------------------------------------------------
+// Handlers: vanilla re-implementation of js/main.js and the page's inline script.
+// ---------------------------------------------------------------------------
+function $id(id) { return document.getElementById(id); }
+function fire(el, type) { el.dispatchEvent(new Event(type, { bubbles: true })); }
+function show(el) { el.style.display = ''; }
+function hideEl(el) { el.style.display = 'none'; }
+function fillOptions(select, items, codeKey, textKey) {
+  select.innerHTML = '<option value selected disabled>Select</option>';
+  items.forEach(function (ex) {
+    var o = document.createElement('option');
+    o.value = ex[codeKey];
+    o.textContent = ex[textKey];
+    select.appendChild(o);
+  });
+}
+function fieldsetControls(elm, selector) { return Array.prototype.slice.call(elm.closest('fieldset').querySelectorAll(selector)); }
+
+function onChangeId(elm, id) {
+  var val = elm.value;
+  var box = $id(id);
+  var input = box.querySelector('input');
+  var reveal;
+  if (id == 'maritalElm') reveal = val == 'Married';
+  else if (id == 'quotaDetailsElm') {
+    reveal = val == 1 || val == 2 || val == 3 || val == 6;
+    if (reveal) {
+      $id('quotaText').textContent = val == 3 ? '[Birangana Details] i.e, Name, Certificate No, Date etc'
+        : (val == 1 || val == 2) ? '[Freedom Fighter Details] i.e, Name, Certificate No, Date etc' : '[Ethnicity Name]';
+    }
+  } else reveal = !!(val && parseInt(val, 10));
+  box.classList.toggle('hide', !reveal);
+  elm.parentElement.style.maxWidth = reveal ? '105px' : 'unset';
+  input.required = reveal;
+}
+function onChangeQuota(elm) { return; }
+function onChangeDistrict(elm, upzElmId) {
+  if (upzElmId == 'present_upazila' && $id('same_as_present').checked) {
+    $id('permanent_district').value = '';
+    fire($id('permanent_district'), 'change');
+    $id('same_as_present').click();
+  }
+  var items = upazilaThanaList.filter(function (ex) { return ex.dist_code == elm.value; });
+  fillOptions($id(upzElmId), items, 'thana_code', 'thana');
+}
+function onChangePresentUpazila() {
+  if ($id('same_as_present').checked) {
+    $id('permanent_upazila').value = '';
+    $id('same_as_present').click();
+  }
+}
+function onChangeExamTypeSSC(elm) {
+  var types = (elm.value == 3 || elm.value == 6) ? ['V', 'Z'] : ['G', 'Z'];
+  fillOptions($id('ssc_group'), subjectGroupSSC.filter(function (ex) { return types.indexOf(ex.type) >= 0; }), 'code', 'value');
+}
+function onChangeExamTypeHSC(elm) {
+  var types = ['G', 'Z'];
+  if (elm.value == 4) types = ['T', 'Z'];
+  else if (elm.value == 7 || elm.value == 10) types = ['M', 'Z'];
+  else if (elm.value == 8) types = ['V', 'Z'];
+  fillOptions($id('hsc_group'), subjectGroupHSC.filter(function (ex) { return types.indexOf(ex.type) >= 0; }), 'code', 'value');
+}
+function onChangeExamTypeGRA(elm) {
+  var byExam = { 1: 'E', 2: 'A', 3: 'M', 4: 'G', 5: 'P', 6: 'F', 7: 'B', 8: 'G' };
+  var t = byExam[parseInt(elm.value, 10)];
+  var items = t ? subjectDegreeListGRA.filter(function (ex) { return ex.type == t || ex.type == 'Z'; }) : [];
+  fillOptions($id('gra_subject'), items, 'code', 'value');
+}
+function onChangeMasExam(elm) {}
+function onChangeResult(elm) {
+  var gpa = elm.parentElement.querySelector('.gpaVal');
+  if (elm.value == 4 || elm.value == 5) {
+    elm.classList.add('resultSelect');
+    show(gpa);
+    gpa.required = true;
+  } else {
+    elm.classList.remove('resultSelect');
+    gpa.value = '';
+    gpa.required = false;
+    hideEl(gpa);
+  }
+}
+function onOffSameAsBtn(elm) {
+  if (elm.checked) {
+    var ids = ['present_careof', 'present_village', 'present_district', 'present_upazila', 'present_post', 'present_postcode'];
+    if (ids.some(function (id) { return !$id(id).value; })) {
+      alert('Please select the present address properly!');
+      elm.checked = false;
+      return;
+    }
+    $id('permanent_district').value = $id('present_district').value;
+    fire($id('permanent_district'), 'change');
+    $id('permanent_upazila').value = $id('present_upazila').value;
+    if (!$id('permanent_district').value) { alert("The present district isn't available in permanent district list!"); elm.checked = false; return; }
+    if (!$id('permanent_upazila').value) { alert("The present upazila isn't available in permanent upazila list!"); elm.checked = false; return; }
+    ['careof', 'village', 'post', 'postcode'].forEach(function (f) { $id('permanent_' + f).value = $id('present_' + f).value; });
+    ['careof', 'village', 'district', 'upazila', 'post', 'postcode'].forEach(function (f) {
+      var p = $id('permanent_' + f);
+      p.disabled = true;
+      p.required = false;
+    });
+  } else {
+    fieldsetControls(elm, 'input:not([type=checkbox]),select,textarea').forEach(function (c) { c.required = true; c.disabled = false; });
+  }
+}
+function onKeyupJobDesc(elm) { elm.parentElement.querySelector('.charLength').textContent = 300 - elm.value.length; }
+function jobDescChange(elm) { elm.value = elm.value.slice(0, 300); }
+function ifApplicable(elm) {
+  var controls = fieldsetControls(elm, 'input:not([type=checkbox]),select,textarea,button');
+  var legend = elm.closest('fieldset').querySelector('legend');
+  if (elm.checked) {
+    controls.forEach(function (c) { c.required = true; c.disabled = false; });
+    legend.style.opacity = 1;
+    fieldsetControls(elm, 'input.other_value').forEach(function (c) { if (c.style.display == 'none') c.required = false; });
+  } else {
+    controls.forEach(function (c) { c.disabled = true; c.required = false; c.value = ''; });
+    legend.style.opacity = 0.5;
+  }
+}
+function ifApplicableExp(elm) {
+  var controls = fieldsetControls(elm, 'input:not(.if_applicable_exp),select,textarea,button');
+  if (elm.checked) {
+    controls.forEach(function (c) { c.required = true; c.disabled = false; });
+    $id('currently_working').required = false;
+  } else {
+    controls.forEach(function (c) { c.value = ''; c.disabled = true; c.required = false; });
+    $id('currently_working').checked = false;
+  }
+}
+function currentlyWorking(elm) {
+  if (postInfo.job_exp_required != 1 && !$id('if_applicable_exp').checked) return;
+  var endDate = elm.closest('.end_date_wraper').querySelector('input.job_end_date');
+  if (elm.checked) { endDate.value = today; endDate.disabled = true; endDate.required = false; }
+  else { endDate.required = true; endDate.disabled = false; }
+}
+function onChangeSubUni(elm) {
+  var other = elm.closest('div').querySelector('.other_value');
+  if (elm.value == 999) { show(other); other.required = true; } else { other.value = ''; other.required = false; hideEl(other); }
+}
+function onChangeSubGrp(elm) {
+  var other = elm.parentElement.querySelector('.other_value');
+  if (elm.value == 99) { show(other); other.required = true; } else { other.value = ''; other.required = false; hideEl(other); }
+}
+var onChangeBoard = onChangeSubGrp;
+function onMobileInput() { return true; }
+function isValidEnglishNames() { return true; }
+function bangla_only_string() { return true; }
+function validateForm() { return false; }
+function addNewExp() {}
+function refreshCaptcha() {}
+</script>
+</body>
+</html>
